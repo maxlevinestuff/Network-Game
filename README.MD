@@ -1,10 +1,8 @@
+Network Game README
 
-███╗░░██╗███████╗████████╗░██╗░░░░░░░██╗░█████╗░██████╗░██╗░░██╗  ░██████╗░░█████╗░███╗░░░███╗███████╗
-████╗░██║██╔════╝╚══██╔══╝░██║░░██╗░░██║██╔══██╗██╔══██╗██║░██╔╝  ██╔════╝░██╔══██╗████╗░████║██╔════╝
-██╔██╗██║█████╗░░░░░██║░░░░╚██╗████╗██╔╝██║░░██║██████╔╝█████═╝░  ██║░░██╗░███████║██╔████╔██║█████╗░░
-██║╚████║██╔══╝░░░░░██║░░░░░████╔═████║░██║░░██║██╔══██╗██╔═██╗░  ██║░░╚██╗██╔══██║██║╚██╔╝██║██╔══╝░░
-██║░╚███║███████╗░░░██║░░░░░╚██╔╝░╚██╔╝░╚█████╔╝██║░░██║██║░╚██╗  ╚██████╔╝██║░░██║██║░╚═╝░██║███████╗
-╚═╝░░╚══╝╚══════╝░░░╚═╝░░░░░░╚═╝░░░╚═╝░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚═╝  ░╚═════╝░╚═╝░░╚═╝╚═╝░░░░░╚═╝╚══════╝ README
+![example](https://github.com/maxlevinestuff/Network-Game/blob/main/example%20out.png?raw=true)
+
+GraphGamePy contains the main solver code. GraphGameJs contains a javascript game for a human to play against the strategies by exporting python solution to JSON.
 
 Please look at Driver_Tutorial.py for an example of how to use everything.
 For more details/parameters, you can look at the code of the specific module, which is commented.
@@ -39,10 +37,17 @@ Module overview (presented in the order that they are generally called in):
 		Add all of the NetworkGames to the exporter, then call export_to_JSON. It will export GameData.json to json_output. If there is already a GameData.json in json_output, the exported NetworkGameSolutions will be appended. Note: the file is actually a js file that contains a js array containing JSON strings, not actually a JSON file. Then place the GameData.json in the javascript game directory to play.
 
 Todo:
+
 	* make modules for jupyter notebook for running code on server / chameleon
+
 	* create multi dimensional for loop and record ratios between rational: highest_mixed/myopic
+
 	* draw nodes and edges: with nodes bigger depending on total utility
+
 	* Function that returns a list of all possible GameRules with various options
+
 	* simulate and simulate one game have dup code to put in constructor instead
+
 	* to get needed sample size, make a graph comparing expected to actual rational, and find the asymptote
+	
 	* Add saving NetworkGameSolutions as pickle or other method
