@@ -1,0 +1,3 @@
+Generate network game solution(s) in GraphGamePy, add them to JSONExport, then use export to JSON. Take the resulting GameData.json from json_output folder and place it in this directory. Then, when loading index.html, it will randomly choose one of the outputted games from GameData.json. The javascript application will be able to run any network_game_solution produced from GraphGamePy.
+
+Todo: Once gameOver == true at the end of the click event, either display the (possibly encrypted) score and move list in the html and link to a survey, or auto upload the score and move list to a database.
